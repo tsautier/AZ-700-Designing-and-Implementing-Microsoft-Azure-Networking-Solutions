@@ -81,14 +81,14 @@ In this exercise, you will:
    | **Setting**               | **Value**                  |
    | ------------------------- | -------------------------- |
    | **Project details**       |                            |
-   | Resource Group            | Auto-populated as ContosoResourceGroup (derived from the selected virtual network) |
+   | Resource Group            | ContosoResourceGroup       |
    | **Instance details**      |                            |
    | Name                      | CoreServicesVnetGateway    |
    | Region                    | East US                    |
    | Gateway type              | ExpressRoute               |
    | SKU                       | Standard                   |
    | Virtual network           | CoreServicesVNet           |
-   | Subnet                    | Auto-populated as GatewaySubnet (10.20.0.0/27) |
+   | Subnet                    | GatewaySubnet              |
    
 1. Select **Review + Create**.
 
