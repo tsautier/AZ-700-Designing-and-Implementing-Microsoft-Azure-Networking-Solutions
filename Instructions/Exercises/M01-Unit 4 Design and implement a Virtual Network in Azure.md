@@ -87,7 +87,7 @@ In this exercise, you will:
 1. Select **Create** on the Virtual networks page.  
    
 1. Use the information in the following table to create the CoreServicesVnet virtual network.  
-   Remove or overwrite the default IP Address space. 
+   On the **Address space** tab, remove or overwrite the default IPv4 address space. 
 
    | **Tab**      | **Option**         | **Value**            |
    | ------------ | ------------------ | -------------------- |

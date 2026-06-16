@@ -72,23 +72,23 @@ In this exercise, you will:
 
 ## Task 2: Create the virtual network gateway
 
-1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter virtual network gateway, and then select **Virtual network gateways** from the results.
+1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter virtual network gateway, and then select **Virtual network gateways** from the results. The page opens in the **Hybrid connectivity** hub, in the **ExpressRoute gateways** view.
 
-1. On the Virtual network gateways page, select **+Create**.
+1. On the **ExpressRoute gateways** view, select **+ Create**.
 
 1. On the **Create virtual network gateway** page, use the information in the following table to create the gateway:
 
    | **Setting**               | **Value**                  |
    | ------------------------- | -------------------------- |
    | **Project details**       |                            |
-   | Resource Group            | ContosoResourceGroup       |
+   | Resource Group            | Auto-populated as ContosoResourceGroup (derived from the selected virtual network) |
    | **Instance details**      |                            |
    | Name                      | CoreServicesVnetGateway    |
    | Region                    | East US                    |
    | Gateway type              | ExpressRoute               |
    | SKU                       | Standard                   |
    | Virtual network           | CoreServicesVNet           |
-   | Subnet                    | GatewaySubnet              |
+   | Subnet                    | Auto-populated as GatewaySubnet (10.20.0.0/27) |
    
 1. Select **Review + Create**.
 

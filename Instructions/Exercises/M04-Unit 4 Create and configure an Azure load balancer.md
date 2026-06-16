@@ -65,11 +65,11 @@ In this section, you will create a virtual network and a subnet.
 
 1. On the **Address space** tab, select **+ Add a subnet**.
 
-1. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a starting address of: **10.1.0.0/24**.
+1. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, a starting address of **10.1.0.0**, and a size of **/24**.
 
 1. Ensure **Enable private network (no default outbound access)** is **not** checked. **Save** your changes. Select **Add**
 
-1. Select **+ Add a subnet** again, provide a subnet name of **myFrontEndSubnet**, and a starting address of: **10.1.2.0/24**. Select **Add**
+1. Select **+ Add a subnet** again, provide a subnet name of **myFrontEndSubnet**, a starting address of **10.1.2.0**, and a size of **/24**. Select **Add**
 
 1. Verify that **AzureBastionSubnet** exists, add if needed.
 

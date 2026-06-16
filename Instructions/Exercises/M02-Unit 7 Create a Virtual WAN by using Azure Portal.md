@@ -87,6 +87,15 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 
 ## Task 3: Connect a VNet to the Virtual Hub
 
+1. Ensure **ResearchVnet** exists in **ContosoResourceGroup**. If it does not exist (for example, it was deleted in an earlier lab), recreate it from Cloud Shell:
+
+   ```powershell
+   $existingVnet = Get-AzVirtualNetwork -Name "ResearchVnet" -ResourceGroupName "ContosoResourceGroup" -ErrorAction SilentlyContinue
+   if (-not $existingVnet) {
+      New-AzVirtualNetwork -Name "ResearchVnet" -ResourceGroupName "ContosoResourceGroup" -Location "southeastasia" -AddressPrefix "10.40.0.0/16"
+   }
+   ```
+
 1. Locate the Virtual WAN that you created.
 
 1. In ContosoVirtualWAN, under **Connectivity**, select **Virtual network connections**.
@@ -103,7 +112,7 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 
    + **Resource Group:** ContosoResourceGroup
 
-   + **Virtual network:** ResearchVNet
+   + **Virtual network:** ResearchVnet
 
    + **Propagate to none:** Yes
 
