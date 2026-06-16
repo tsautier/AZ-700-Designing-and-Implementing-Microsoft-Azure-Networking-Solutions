@@ -72,9 +72,9 @@ In this exercise, you will:
 
 ## Task 2: Create the virtual network gateway
 
-1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter virtual network gateway, and then select **Virtual network gateways** from the results.
+1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter virtual network gateway, and then select **Virtual network gateways** from the results. The page opens in the **Hybrid connectivity** hub, in the **ExpressRoute gateways** view.
 
-1. On the Virtual network gateways page, select **+Create**.
+1. On the **ExpressRoute gateways** view, select **+ Create**.
 
 1. On the **Create virtual network gateway** page, use the information in the following table to create the gateway:
 

@@ -43,7 +43,7 @@ In this exercise, you:
 1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter application gateway, and then select **Application gateways** from the results.
     ![Azure Portal search for application gateway](../media/search-application-gateway.png)
 
-1. On the Application gateways page, select **+ Create**, and then select **Pplication Gateway**.
+1. On the Application gateways page, select **+ Create**, and then select **Application Gateway** from the dropdown menu.
 
 1. On the Create application gateway **Basics** tab, enter, or select the following information:
 
@@ -139,7 +139,7 @@ In this exercise, you:
 
 1. Search for and select the **ContosoVNet**. Verify the **AGSubnet** was created. 
 
-1. To create the **BackendSubnet**, select **Settings** and then **Subnets**. Be sure to **Add** the subnet when finished.
+1. To create the **BackendSubnet**, select **Settings** and then **Subnets**. Select **+ Subnet**, enter the settings below, and then select **Add**.
    
    | **Setting**       | **Value**                          |
    | ----------------- | ---------------------------------- |
@@ -160,6 +160,8 @@ In this exercise, you:
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
    >**Note**: You will be prompted to provide an Admin password. 
+
+   >**Note**: If deployment fails with **NotAvailableForSubscription** for the default VM size, open **backend.parameters.json**, update the **vmSize** value to a VM size that is available in your subscription and region, and rerun the deployment command.
 
    ```powershell
    $RGName = "ContosoResourceGroup"

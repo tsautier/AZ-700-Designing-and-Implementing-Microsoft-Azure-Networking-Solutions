@@ -56,7 +56,7 @@ In this section, you will create two instances of a web application deployed in 
    | Windows Plan     | Select **Create  new**  Name: **ContosoAppServicePlanEastUS** |
    | Pricing Plan     | **Premium V3 P1V3**  (Select another plan if this is unavailable)          |
 
-    >**Note:** If your deployment is disallowed by policy, then select another region.
+   >**Note:** If **East US** is unavailable due to quota, capacity, or policy constraints, select another available region in your subscription.
     
 1. Select **Monitor + secure** tab.
 

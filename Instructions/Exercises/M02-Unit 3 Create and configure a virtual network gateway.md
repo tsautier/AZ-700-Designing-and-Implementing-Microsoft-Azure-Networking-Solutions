@@ -18,6 +18,16 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
 ## Estimated time: 70 minutes (including ~45 minutes deployment waiting time)
 
+## Region availability note
+
+If a deployment fails due to regional capacity or quota limits, use these guidelines:
+
++ Keep the lab defaults whenever possible.
++ If **East US** is unavailable, use a nearby backup region (for example, **East US 2**, **Central US**, or **South Central US**) for the affected CoreServices resources.
++ Keep each virtual network gateway in the same region as its virtual network.
++ Keep paired resources aligned in the same region (VNet, VPN gateway, public IP, and VM).
++ If gateway SKU capacity is unavailable, first try another supported region before changing lab-required settings.
+
 ## Job skills
 
 In this exercise, you:
@@ -117,7 +127,7 @@ In this exercise, you:
 
 1. Select **CoreServicesVM**.
 
-1. On **CoreServicesVM**, select **Connect** and then **RDP**.
+1. On **CoreServicesVM**, select **Connect**. On the **Connect** page, select the **Native RDP** card (marked **MOST POPULAR** and **LOCAL MACHINE**).
 
 1. Select **Download RDP file**.
 
@@ -149,13 +159,15 @@ In this exercise, you:
 
 ## Task 6: Create CoreServicesVnet Gateway
 
-1. In the portal search for and select **Hybrid connectity**.
+1. In the Azure portal, search for and select **Hybrid connectivity**.
 
-1. In the **VPN Gateways** blade, select **VPN gateways**.
+1. On the Hybrid connectivity page, in the left menu, expand **VPN Gateway** and then select **VPN gateways**.
 
-1. In Virtual network gateways, select **+ Create**.
+1. On the VPN gateways page, select **+ Create**.
 
 1. Use the information in the following table to create the virtual network gateway:
+
+   >**Note**: The Azure portal defaults for SKU, Generation, Active-active mode, and BGP have changed. Be sure to change these values from their defaults to match the table below.
 
    | **Tab**         | **Section**       | **Option**                                  | **Value**                    |
    | --------------- | ----------------- | ------------------------------------------- | ---------------------------- |
@@ -196,13 +208,15 @@ In this exercise, you:
 
 ### Create the virtual network gateway
 
-1. In the portal search for and select **Hybrid connectity**.
+1. In the Azure portal, search for and select **Hybrid connectivity**.
 
-1. In the **VPN Gateways** blade, select **VPN gateways**.
+1. On the Hybrid connectivity page, in the left menu, expand **VPN Gateway** and then select **VPN gateways**.
 
-1. In Virtual network gateways, select **+ Create**.
+1. On the VPN gateways page, select **+ Create**.
 
 1. Use this information and the **Settings** tab to create the virtual network gateway. 
+
+   >**Note**: The Azure portal defaults for SKU, Generation, Active-active mode, and BGP have changed. Be sure to change these values from their defaults to match the table below.
 
    | **Tab**         | **Section**       | **Option**                                  | **Value**                    |
    | --------------- | ----------------- | ------------------------------------------- | ---------------------------- |
@@ -226,9 +240,11 @@ In this exercise, you:
 
 ## Task 8: Connect CoreServicesVnet to ManufacturingVnet
 
-1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
+1. In the Azure portal, search for and select **Hybrid connectivity**.
 
-1. In Virtual network gateways, select **CoreServicesVnetGateway**.
+1. On the Hybrid connectivity page, in the left menu, expand **VPN Gateway** and then select **VPN gateways**.
+
+1. In the VPN gateways list, select **CoreServicesVnetGateway**.
 
 1. In CoreServicesGateway, select **Connections**, and then select **+ Add**.
 
@@ -256,9 +272,11 @@ In this exercise, you:
 
 ## Task 9: Connect ManufacturingVnet to CoreServicesVnet
 
-1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
+1. In the Azure portal, search for and select **Hybrid connectivity**.
 
-1. In Virtual network gateways, select **ManufacturingVnetGateway**.
+1. On the Hybrid connectivity page, in the left menu, expand **VPN Gateway** and then select **VPN gateways**.
+
+1. In the VPN gateways list, select **ManufacturingVnetGateway**.
 
 1. In CoreServicesGateway, select **Connections**, and then select **+ Add**.
 
